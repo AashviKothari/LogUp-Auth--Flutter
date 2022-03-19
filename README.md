@@ -1,6 +1,8 @@
 # logitup_auth
 
-A new Flutter project.
+In this Application Built Using Flutter🎯 along with 
+FireBase🔥for Managing the data, 
+I have Curated a simple🤝 Login/Sign Up Space along with Authentication!
 
 ## Getting Started
 
