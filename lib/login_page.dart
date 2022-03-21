@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 
@@ -15,6 +14,7 @@ class _LoginPageState extends State<LoginPage> {
 
 double w = MediaQuery.of(context).size.width;
 double h = MediaQuery.of(context).size.height;
+
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -40,21 +40,22 @@ double h = MediaQuery.of(context).size.height;
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(height: 20),
                 Text(
                   "Hello!",
                   style: TextStyle(
-                    fontSize: 70,
+                    fontSize: 60,
                     fontWeight: FontWeight.bold
                   ),
                 ),
                 Text(
                   "Sign into your Account",
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 20,
                     color: Colors.grey[500]
                   ),
                 ),
-                SizedBox(height: 40),
+                SizedBox(height: 20),
                 TextField(
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
