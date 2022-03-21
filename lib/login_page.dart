@@ -56,11 +56,36 @@ double h = MediaQuery.of(context).size.height;
                   ),
                 ),
                 SizedBox(height: 20),
-                TextField(
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30),
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 10,
+                        spreadRadius: 7,
+                        offset: Offset(1, 1),
+                        color: Colors.grey.withOpacity(0.2)
+                      )
+                    ]
+                  ),
+                child: TextField(
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide(
                         color: Colors.white,
+
+                        width: 1.0,
+                        
+                      )  
+                    ),
+
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(
+                        color: Colors.white,
+                        
                         width: 1.0,
                         
                       )  
@@ -69,6 +94,60 @@ double h = MediaQuery.of(context).size.height;
                       borderRadius: BorderRadius.circular(30)
                     )
                   ),
+                ),
+                ),
+                SizedBox(height: 20),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30),
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 10,
+                        spreadRadius: 7,
+                        offset: Offset(1, 1),
+                        color: Colors.grey.withOpacity(0.2)
+                      )
+                    ]
+                  ),
+                child: TextField(
+                  decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(
+                        color: Colors.white,
+
+                        width: 1.0,
+                        
+                      )  
+                    ),
+
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(
+                        color: Colors.white,
+                        
+                        width: 1.0,
+                        
+                      )  
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30)
+                    )
+                  ),
+                ),
+                ),
+                Row(
+                  children: [
+                    Expanded(child: Container(),),
+                    Text(
+                  "Forgot Your Password ?",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.grey[500]
+                  ),
+                ),
+                  ],
                 ),
               ],
             ),
